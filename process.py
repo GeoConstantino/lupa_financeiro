@@ -99,8 +99,4 @@ if __name__ == '__main__':
         df[lista_cols_fillna] = df[lista_cols_fillna].fillna(0)
 
 
-        salva_csv(df,date,"finaceiro")
-     
-
-
-
+        salva_csv(df,date,"financeiro")
