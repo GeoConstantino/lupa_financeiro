@@ -94,9 +94,11 @@ if __name__ == '__main__':
         df = df_strip(df)
         df = df.drop_duplicates()
 
-        lista_cols_fillna = ['soma_cc','soma_complemento','imovel','soma_predio','soma_municipio','soma_craai','total']
+        lista_cols_fillna = ['soma_cc','soma_complemento','soma_imovel','soma_predio','soma_municipio','soma_craai','total']
 
+        
         df[lista_cols_fillna] = df[lista_cols_fillna].fillna(0)
 
 
         salva_csv(df,date,"financeiro")
+        df.items
