@@ -75,7 +75,7 @@ if __name__ == '__main__':
 
         try:
             dfa = pd.read_excel(file,sheet_name="Consolidação")
-        
+
         except ImportError as error:
             print('='*30+'  Erro de Importação do Arquivo  '+'='*30)
             print('Dica: Certifique-se que o arquivo possui a aba: Consolidação')
