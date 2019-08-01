@@ -90,6 +90,8 @@ if __name__ == '__main__':
         
         date = get_date_df(df)
 
+        df['codigo_cc'] = df['codigo_cc'].astype(str)
+
         df = adjust_data_format(df)
         df = df_strip(df)
         df = df.drop_duplicates()
