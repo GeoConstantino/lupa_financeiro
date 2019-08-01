@@ -104,3 +104,4 @@ if __name__ == '__main__':
 
         salva_csv(df,date,"financeiro")
         df.items
+        
